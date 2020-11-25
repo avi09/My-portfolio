@@ -1,0 +1,28 @@
+python python python python python
+java java java java
+C C C
+R R
+JavaScript JavaScript JavaScript JavaScript
+HTML HTML HTML HTML
+CSS CSS CSS CSS
+angular angular angular
+react react
+nodejs nodejs nodejs nodejs
+servlet servlet
+seeker seeker
+defensics defensics
+express express express
+matplotlib matplotlib matplotlib
+tensorflow tensorflow
+sklearn sklearn sklearn
+MongoDB MongoDB MongoDB MongoDB
+MySQL MySQL MySQL MySQL
+git git git git
+flask flask flask flask
+django django django
+numpy numpy numpy
+linux linux linux
+AWS AWS AWS
+bash bash bash
+keras keras keras
+opencv opencv opencv
