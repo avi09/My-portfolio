@@ -1,0 +1,41 @@
+[{
+  "name":"object Detection System (Python | Flask | Tensorflow | HTML | CSS | JS)",
+  "desc":"An object detection system based on tensorflow and flask web framework. It detects objects in image frames, videos and also a batch of images. \n A threshold level of 60% is set by default to classify an object. It uses the COCO dataset. It also has been incorporated with multi threading for faster results. The average time taken to classify a frame of 600x400 is 0.25 seconds.",
+  "github":"https://www.github.com/avi09/Object-Detection"
+},
+{
+  "name":"WhatsApp Web Client (NodeJS | AngularJS | ExpressJS | Twilio WhatsApp API)",
+  "desc":"Built a 2-way messaging client to communicate with WhatsApp endpoint applications. Fetched messages from REST API asynchronous calls. Employed tunneling through Ngrok at local host.",
+  "github":"https://github.com/avi09/WhatsApp-Client-MEAN"
+},
+{
+  "name":"University Parking Lot System (UPS) (Python | MySQL connector | MySQL)",
+  "desc":"Developed parking permissions system, giving parking access to employees, students and visitors. Managed permissions of zones and spaces via MySQL DB. Checked validity and issued citations.",
+  "github":""
+},
+{
+  "name":"OpenMRS Security Analysis and Enhancement (Java | Coverity | SonarLint | ZAP)",
+  "desc":"Found security issues like SQL Injection, XSS Scripting, Dependency Vulnerability and fixed them. Utilized various static and dynamic analysis tools with penetration Testing, within OWASP standards.",
+  "github":""
+},
+{
+  "name":"Voice Assistant (Python | SpeechRecognition | NLTK | Tkinter | JSON)",
+  "desc":"Coded a voice assistant Rachel which can open apps, show news, stocks and meanings. Used file system for command management to get use case scalability. Employed gTTS API. ",
+  "github":"https://github.com/avi09/Desktop-Assistant"
+},
+{
+  "name":"als music recommendation system",
+  "desc":"Made a music recommendation system in a distributed environment. The dataset was taken from a collection of oepn music listening history of 50 million streams. The data for top 50 users was taken. Since the artists can have slightly different names for different albums though they are same, so the artists are first mapped to canonical artist IDs. Then the data is used to implicitly train the Alternating Least Squares algorithm. After this, the test data which is about 20% is then used to predict and validate the choice.",
+  "github":"https://www.github.com/avi09/Mach"
+},
+{
+  "name":"detection of defects on textured surfaces",
+  "desc":"Whenever a company is placing ads, for example the Google search Engine, the ads are targeted on the basis of keywords that the users enter in the query. There are different companies that give ad requests to such companies and they have several keywords which trigger their ads. Due to limited daily budgets and different bid amounts, the sequence of ads to be shown and the revenue generated from them becomes a complex problem. Using bipartite graphs I calculated the revenue and competitive ratio for such a problem. I used balanced, greedy and MSVV algorithm for it. The maximum revenue came to be 16721 and the maximum calculated competitive ratio was 0.99 using the dataset which I used.",
+  "github":"https://github.com/avi09/Adwords_Placement_On_Customer_Bids"
+},
+{
+  "name":"market influence on community using attributed graph",
+  "desc":"Whenever a company targets ads to a user, usually the users are the ones which spread the word about the product and thus make the product popular. So in advertising if we target the right ser of people in a community, then we can get maximum advertising. To solve thus problem, attributed graph communities are used which define not just the people in a group but rather their information and the connection between them.",
+  "github":"https://github.com/avi09/Mach"
+}
+]

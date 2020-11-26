@@ -52,7 +52,6 @@ border-color=white;
 
 .projects{
 
-  background-image: url("../static/p2.jpg");
   color: red;
   height: 115px;
   margin-bottom: 25px;
@@ -74,15 +73,6 @@ border-color=white;
 .prph{
   border-radius: 25px;
   display: block;
-}
-
-
-.tb{
-margin-right: 15px;
-float: right;
-line-height: 29px;
-border-radius: 25px;
-color: white;
 }
 
 /* Add a black background color to the top navigation */
@@ -158,66 +148,58 @@ color: white;
       </div>
         <center><img src="static/wordcloud.png" width="95%" style="margin-top: 1%;"></center>
     </div>
-
-    <br><br><br><br>
-
-    <div style='background-color:black;'>
+    <br><br><br><br><br><br>
     <div style='text-align:center;'>
-    <font color='white' size=4 style='text-align:center;'>
-     <b>CURRENTLY WORKING ON</b>
-     <br>DESKTOP ASSISTANT
-     <br><br>
-     </font>
-     <div style="width: 95%; overflow: hidden; margin-bottom: 45px; background: black">
-    <div style="margin-top: 5px; text-align:center;">
-      <img src="../static/rachel.png" width="45%" height="45%">
+      <font color='#444544' size=4 style='text-align:center;'>
+        <b>Education</b><br><br>
+      </font>
     </div>
-    </div>
-     </div>
-     <div style='position:relative;left:5%;width: 95%;'>
-     <font color = 'white'>
-    I am currently working on a <b>Desktop Assistant</b> - "Rachel" as a personal project.<br><br> It will be able to do several tasks with ease and flexbility.
-    It currently has been implemented with actions that include opening applications, meanings of words, customized user commands, direct bash commands and multiple
-    commands in one statement. <b>Integrated Natural Language Processing to make clear distinctions between sentences like - "open firefox" and "what is the meaning of open?".</b>
-    <br><br>I am currently working on fetching news, stock data, weather and mails. Also will be merging it with SpeechRecognition API to invoke Rachel on one call.
+    <br><br>
 
-     </font>
-     </div>
+    <center><b>
+    {% for x in ED %}
+      <div style="width: 85%; border-color: rgb({{x['r']}}, {{x['g']}}, {{x['b']}});; border-style: solid; border-width: 1px;">
+      <div style="width: 85%; overflow: hidden; content: ''; display: table; clear: both; background-size: 75%;
+      color: rgb({{x['r']}}, {{x['g']}}, {{x['b']}}); line-height: 1.4;">
+        <font size = 6em><br>{{x["name"]}} <br>
+        </font>
+           {{x["ga"]}}
+           <br><br>
+            <font size = 4em color='#757575'>{{x["desc"]}}</font><br><br>
+      </div>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-  <div class="prheading">
-    <font face="Arial Unicode MS" color=#f2f2f2 size=6.9em>
-    PROJECT WORK
-    </font>
-  </div>
-  <div class="projects">
-  </div>
-
-    <div class="pvid">
-      <video id="myVideo"  style="margin-bottom: 15px;" width="95%" height="55%" controls poster="../static/img.jpg">
-        <source src="../static/video.mp4" type="video/mp4">
-        <!-source src="{{ url_for('static',filename='video.mp4') }}" type="video/mp4"-->
-      </video>
-    <img src="../static/vm1.jpg" width="95%" height="20%"><br>
-    <font color='white'>Get Vibrous Media Player - https://drive.google.com/file/d/1Q01fUAbiTaxF_7EvYuyGqY9MrHscjNqn/view?usp=sharing</font>
-    </div>
-
-{% for x in X %}
-    <div style="width: 95%; overflow: hidden; margin-bottom: 45px; background: black">
-    <div style="margin-top: 5px;">
-      /*<imgN src={{x[2]}} width="55%" height="355px" class="prph">*/
-    </div>
-    <div class="tb">
-      {{x[0]}}<br>{{x[1]}}<br><br>{{x[3]}}
-    </div>
-    </div>
+      <br><br>
 {% if not loop.last %}
 {% endif %}
 {% endfor %}
+  </b></center>
+  <br><br>
+  <div style='text-align:center;'>
+    <font color='#444544' size=4 style='text-align:center;'>
+      <b>Projects</b><br><br>
+    </font>
+  </div>
+  <br>
+
+  <center><b>
+  {% for x in X %}
+    <div style="width: 85%; border-color: rgb({{x['r']}}, {{x['g']}}, {{x['b']}});; border-style: solid; border-width: 1px;">
+    <div style="width: 85%; overflow: hidden; content: ''; display: table; clear: both; background-size: 75%;
+    color: rgb({{x['r']}}, {{x['g']}}, {{x['b']}}); line-height: 1.4;">
+      <font size = 6em><br>{{x["name"]}} <br>
+      </font>
+        <a href={{x["github"]}} style="color: rgb({{x['r']}}, {{x['g']}}, {{x['b']}});">
+         {{x["github"]}}
+       </a><br><br>
+          <font size = 4em color='#757575'>{{x["desc"]}}</font><br><br>
+    </div>
+  </div>
+    <br><br>
+{% if not loop.last %}
+{% endif %}
+{% endfor %}
+</b></center>
+
 
     <div style="width: 95%; overflow: hidden; background: black;  color: white; vertical-align: middle;display: flex; justify-content: center; /* align horizontal */ align-items: center;">
       Website and Template Developed By Avi Agrawal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact
