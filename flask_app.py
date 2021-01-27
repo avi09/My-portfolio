@@ -23,7 +23,7 @@ for i in range(len(X)):
     X[i]["r"] = random.randint(100, 200)
     X[i]["g"] = random.randint(0, 120)
     X[i]["b"] = random.randint(100, 220)
-    
+
 app=Flask(__name__)
 @app.route('/')
 def home():
